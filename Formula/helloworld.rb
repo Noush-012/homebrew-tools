@@ -5,21 +5,21 @@
 class Helloworld < Formula
   desc "You use the Veracode CLI to perform various actions for testing the security of your applications."
   homepage "https://www.veracode.com"
-  version "1.0.33"
+  version "1.0.34"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.33_macosx_arm64.tar.gz"
-      sha256 "742a346d593bc945322d2608255bb9994214257babe977859b40479614d0d93b"
+      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.34_macosx_arm64.tar.gz"
+      sha256 "ff08fd7efbd92e02414fd86b0cdabd65ad46c2aa0f0988b4a3afd4c1faf65a0b"
 
       def install
         bin.install "helloworld"
       end
     end
     if Hardware::CPU.intel?
-      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.33_macosx_arm64.tar.gz"
-      sha256 "63265d632acef15aadaf7edd26652fd353f95ad2900590c189d32a4e7780820e"
+      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.34_macosx_arm64.tar.gz"
+      sha256 "2acfb554c103ea6f6af9d0857d23ee00eb547c991e678962c129ec46e3d409af"
 
       def install
         bin.install "helloworld"
@@ -29,16 +29,16 @@ class Helloworld < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.33_linux_x86.tar.gz"
-      sha256 "3c4172b81b5d49e0f04134b3f06b85bbab09eb70a07681e03138ec0ec0f3c36c"
+      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.34_linux_x86.tar.gz"
+      sha256 "3fb02517e7bdb6f1984ef0f06afe616c9dc62d6bb46cdaf2e43db6b5e095b088"
 
       def install
         bin.install "helloworld"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.33_linux_x86.tar.gz"
-      sha256 "ed43c2102650125035d359fc6f3e2bc44de44c89a6b523a3a7172afee4e43f4d"
+      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.34_linux_x86.tar.gz"
+      sha256 "2e6dd794932d188a5540d59d1cc9759a1ff9f27409283d9ef931645c5f6f390e"
 
       def install
         bin.install "helloworld"
