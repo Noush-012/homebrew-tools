@@ -5,40 +5,30 @@
 class Helloworld < Formula
   desc "You use the Veracode CLI to perform various actions for testing the security of your applications."
   homepage "https://www.veracode.com"
-  version "1.0.34"
+  version "1.0.38"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.34_macosx_arm64.tar.gz"
-      sha256 "ff08fd7efbd92e02414fd86b0cdabd65ad46c2aa0f0988b4a3afd4c1faf65a0b"
+    url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.38_macosx_arm64.tar.gz"
+    sha256 "76d4586449187f7f80957dfd959f375203547c1069407ca43b78c68f014eba0a"
 
-      def install
-        bin.install "helloworld"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.34_macosx_arm64.tar.gz"
-      sha256 "2acfb554c103ea6f6af9d0857d23ee00eb547c991e678962c129ec46e3d409af"
-
-      def install
-        bin.install "helloworld"
-      end
+    def install
+      bin.install "helloworld"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.34_linux_x86.tar.gz"
-      sha256 "3fb02517e7bdb6f1984ef0f06afe616c9dc62d6bb46cdaf2e43db6b5e095b088"
+      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.38_linux_x86.tar.gz"
+      sha256 "6ae2d2200ecf63920539a874b3879be3bfb9b9a9d2c4e0aa452e5dc69414871a"
 
       def install
         bin.install "helloworld"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.34_linux_x86.tar.gz"
-      sha256 "2e6dd794932d188a5540d59d1cc9759a1ff9f27409283d9ef931645c5f6f390e"
+      url "https://tools.veracode.com/veracode-cli/veracode-cli_1.0.38_linux_x86.tar.gz"
+      sha256 "938e69288b37f1cb8087f77e22caaa37f13a001df8d235afb5c226b3b15fb438"
 
       def install
         bin.install "helloworld"
