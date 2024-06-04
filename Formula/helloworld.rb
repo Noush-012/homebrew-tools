@@ -5,21 +5,21 @@
 class Helloworld < Formula
   desc "You use the helloworld CLI to perform various actions for testing the security of your applications."
   homepage "https://www.helloworld.com"
-  version "1.0.58"
+  version "1.0.59"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.58_macosx_arm64.tar.gz"
-      sha256 "bd3fd57deb537e1330a6eb2774fb81c6fca15f033b96b6d74527a0d632db5857"
+      url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.59_"
+      sha256 "f5385a6c277863113f75d7ad982c97ef1923e4b312c09daf6dbdfa633444c90e"
 
       def install
         bin.install "helloworld"
       end
     end
     on_arm do
-      url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.58_macosx_arm64.tar.gz"
-      sha256 "5c767bcb9c0319da855663fa7ddc6bee7c3043d16c962882a1333f4694c081fc"
+      url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.59_macosx_arm64.tar.gz"
+      sha256 "a04a74d1f264d4567956bdb09d249f0b9fc3677df529e2182ce55eaa9de3f303"
 
       def install
         bin.install "helloworld"
@@ -30,8 +30,8 @@ class Helloworld < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.58_linux_x86.tar.gz"
-        sha256 "ff80cdbe16f5de6756004ffa66960045c6ebd9fe7cdd475e583e997e34ef0eba"
+        url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.59_"
+        sha256 "acc05e719e328cd4e45c0aad40c0f780021612f42566afa49d702b4a8d367c0d"
 
         def install
           bin.install "helloworld"
@@ -40,8 +40,8 @@ class Helloworld < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.58_linux_x86.tar.gz"
-        sha256 "d43c9274aa282a0c1ef8df25fc297e26c49402b30032c707d17fcfac88bf0d4e"
+        url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.59_linux_arm64.tar.gz"
+        sha256 "332b73e15951892fb6bad3e32c254b67314e5be2fd4c318a227047e2256733b6"
 
         def install
           bin.install "helloworld"
