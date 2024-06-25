@@ -5,21 +5,21 @@
 class Helloworld < Formula
   desc "You use the helloworld CLI to perform various actions for testing the security of your applications."
   homepage "https://www.helloworld.com"
-  version "1.0.69"
+  version "2.0.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.69_macosx_arm64.tar.gz"
-      sha256 "58355fa6bc988159ed42391fa10c837d23232cfd4d83aa6b22e6942635a4d920"
+      url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_2.0.2_macosx_arm64.tar.gz"
+      sha256 "0a3933d3c7b891796f93d3755061fc68b4741a299a1b80847d876f9cdad0ef61"
 
       def install
         bin.install "helloworld"
       end
     end
     on_arm do
-      url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.69_macosx_arm64.tar.gz"
-      sha256 "c91367ddf2691cf47e6bbd0d739253776901531958ec053e4d8b8e94df742b20"
+      url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_2.0.2_macosx_arm64.tar.gz"
+      sha256 "0dfc4fc3193b9e314310ce1a07353e27ad753b150ee26892c918556aea2dc13f"
 
       def install
         bin.install "helloworld"
@@ -30,8 +30,8 @@ class Helloworld < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.69_linux_x86.tar.gz"
-        sha256 "d11109b95b0292cd852e91e80debe4e58d33962047e95908c2fd048832754752"
+        url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_2.0.2_linux_x86.tar.gz"
+        sha256 "8ea8c3605e52fbccb1af9c0dada0f9ddbe3b9f82f9d096e7d57073540904fede"
 
         def install
           bin.install "helloworld"
@@ -40,8 +40,8 @@ class Helloworld < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_1.0.69_linux_x86.tar.gz"
-        sha256 "85e1d11edeccc5460cae03b1ec70c7e183637ac82aa5805002c1d10578535a65"
+        url "https://tools.helloworld.com/helloworld-cli/helloworld-cli_2.0.2_linux_x86.tar.gz"
+        sha256 "2dc810a30b968ca580d4bae699e192bf826367691756634a43e8054401fee81f"
 
         def install
           bin.install "helloworld"
